@@ -2,14 +2,14 @@ import java.util.List;
 
 public class BookController {
 
-    BookController bookController=new BookController();
+    Repo repo=new Repo();
     public String addBook(Book book){
-        return bookController.addBook(book);
+        return repo.addBook(book);
     }
     public List<Book> getAllBooks(String name){
-        return bookController.getAllBooks(name);
+        return repo.getAllBooks(name);
     }
     public String getAuthWithMostPage(){
-        return bookController.getAuthWithMostPage();
+        return repo.getAuthWithMostPage();
     }
 }
